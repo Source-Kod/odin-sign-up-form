@@ -66,11 +66,16 @@ color: white;
   color: #e8e6e3;
 }
 
+.right_side p {
+  padding-left: 2vw;
+  max-width: 50vw;
+}
+
 .form-section {
   display: flex;
   flex-direction: row;
-  background-color: lightgrey;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 5rem;
 }
 
 .form-section div {
@@ -78,6 +83,40 @@ color: white;
   flex-direction: column;
 }
 
-.button button {
-  background-color: olive;
+.form_background {
+  background-color: #596D48;
+  padding-left: 2vw;
+}
+
+input {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border-color: #E5E7EB;
+  width: 20vw;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+#submit_button button{
+  background-color: #596D48;
+  border-color: #596D48;
+  color: #e8e6e3;
+  margin: 2vw;
+  border-radius: 10px;
+  width: 220px;
+  height: 50px;
+}
+
+#submit_button button:hover {
+  border-color: blue;
 }
