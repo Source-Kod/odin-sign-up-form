@@ -1,4 +1,19 @@
 /* Set the background color for the entire page */
 body {
   background-color: #282b36;
+  display: flex;
+}
+
+.left_side {
+  background-image: url('../img/halie-west-25xggax4bSA-unsplash.jpg');
+  width: 30vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.right_side {
+  width: 70vw;
+  height: 100vh;
 }
