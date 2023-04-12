@@ -1,11 +1,10 @@
 :root {
-  --left_width: 30vw;
-  --right_width: 70vw;
+  --left_width: 35vw;
+  --right_width: 65vw;
 }
 
 /* Set the background color for the entire page */
 body {
-  background-color: #282b36;
   display: flex;
   margin: 0;
 }
@@ -39,6 +38,7 @@ body {
   font-family: Norse-Bold;
   font-size: 4rem;
   margin: 0;
+  color: white;
 }
 
 .banner img {
@@ -62,8 +62,17 @@ color: white;
 .right_side {
   height: 100vh;
   width: var(--right_width);
-  background-color: #282A36;
-  color: #e8e6e3;
+  color: black;
+}
+
+.right_top_text {
+  margin-top: 13%;
+  margin-bottom: 5%;
+}
+
+.right_top_text p {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .right_side p {
@@ -86,6 +95,8 @@ color: white;
 .form_background {
   background-color: #596D48;
   padding-left: 2vw;
+  padding: 0.5rem 0 0.5rem 1.4rem;
+  box-shadow: 2px 2px 1px black;
 }
 
 input {
@@ -110,11 +121,12 @@ input:invalid {
 #submit_button button{
   background-color: #596D48;
   border-color: #596D48;
-  color: #e8e6e3;
+  color: black;
   margin: 2vw;
   border-radius: 10px;
   width: 220px;
   height: 50px;
+  box-shadow: 2px 2px 1px black;
 }
 
 #submit_button button:hover {
