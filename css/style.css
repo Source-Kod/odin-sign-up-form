@@ -1,21 +1,69 @@
+:root {
+  --left_width: 30vw;
+  --right_width: 70vw;
+}
+
 /* Set the background color for the entire page */
 body {
   background-color: #282b36;
   display: flex;
+  margin: 0;
 }
 
 .left_side {
   background-image: url('../img/halie-west-25xggax4bSA-unsplash.jpg');
-  width: 30vw;
+  width: var(--left_width);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+.banner {
+  display: flex;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  top: 12vh;
+  width: var(--left_width);
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url('../font/Norse-Bold.otf');
+}
+
+.banner p {
+  display: flex;
+  font-family: Norse-Bold;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.banner img {
+  max-width: 20%;  
+  margin: .5rem;
+}
+
+.left_bottom_text {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  justify-content: center;
+  width: var(--left_width);
+  color: white;
+}
+
+.left_bottom_text a:link {
+color: white;
+}
+
 .right_side {
-  width: 70vw;
   height: 100vh;
+  width: var(--right_width);
+  background-color: #282A36;
+  color: #e8e6e3;
 }
 
 .form-section {
