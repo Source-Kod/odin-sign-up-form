@@ -17,3 +17,19 @@ body {
   width: 70vw;
   height: 100vh;
 }
+
+.form-section {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgrey;
+  justify-content: space-evenly;
+}
+
+.form-section div {
+  display: flex;
+  flex-direction: column;
+}
+
+.button button {
+  background-color: olive;
+}
